@@ -1,0 +1,39 @@
+<!DOCTYPE html> <!--Tipo de documento que es-->
+<html lang="es"> <!--Idioma español-->
+<head> <!--Informacion de metados-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestor de Tareas</title> <!--Nombre de la pagina-->
+    <link rel="stylesheet" href="styles.css"> <!--URL de CSS-->
+</head>
+<body> <!--Comienzo del contenido principal de la pagina-->
+    <div class="container"> <!--Creacion de la caja para las tareas-->
+        <h1>Lista de Tareas</h1> <!--Texto Lista de Tareas-->
+        <!--Texto de la indicacion para la asignacion de tareas-->
+        <p>Escribe un nombre para la tarea y asigna su fecha de inicio y de fin.</p>
+        <!--Campo para la asignacion del nombre de las tareas-->
+        <input type="text" id="taskInput" placeholder="Agregar nueva tarea...">
+        <!--Calendario para inicio de tareas-->
+        <input type="date" id="startDate" placeholder="Fecha de inicio">
+        <!--Calendario para fin de tareas-->
+        <input type="date" id="dueDate" placeholder="Fecha de vencimiento">
+        <!--Indicacion de la tecla enter para agregar tareas-->
+        <p>Presiona la tecla "Enter" para agregar tarea.</p>
+        <!--Indicacion de marcar casillas de las tareas-->
+        <p>Marca la casilla de una tarea para señalarla como completada.</p>
+        <ul id="taskList"></ul> <!--Lista no ordenada para las tareas-->
+        <div class="taskActions"> <!--Acciones para las tareas en botones-->
+            <!--Boton para mostrar todas las tareas-->
+            <button id="filterAll">Mostrar Todas</button>
+            <!--Boton para mostrar todas las tareas pendientes o activas-->
+            <button id="filterActive">Pendientes (Activas)</button>
+            <!--Boton para mostrar las tareas completadas marcadas-->
+            <button id="filterCompleted">Completadas</button>
+            <!--Boton para quitar las tareas completadas marcadas-->
+            <button id="clearCompleted">Limpiar Completadas</button>
+        </div> <!--Fin del div de taskActions-->
+    </div> <!--Fin del div del container-->
+    <!--URL de JavaScript para las acciones de las tareas-->
+    <script src="script.js"></script>  
+</body> <!--Fin del contenido principal de la pagina-->
+</html> <!--Fin de la estructura HTML-->

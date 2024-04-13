@@ -1,0 +1,107 @@
+body { /*Contenido del body */
+    font-family: Arial, sans-serif; /* Fuente para el texto */
+    margin: 0; /* Sin márgenes */
+    padding: 0; /* Sin relleno */
+    height: 716px; /* Altura fija del cuerpo (ajustar según sea necesario) */
+    /* Fondo degradado */
+    background: linear-gradient(300deg, #FF4E4E, #A3E4D7, #FFF176, #66FF66);
+}
+
+.container { /*Contenido de la caja de las tareas */
+    max-width: 600px; /* Ancho máximo del contenedor */
+    margin: 20px auto; /* Margen superior e inferior automático y lateral de 20px */
+    background-color: #fff; /* Color de fondo del contenedor */
+    padding: 20px; /* Espaciado interno del contenedor */
+    border-radius: 5px; /* Bordes redondeados */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra del contenedor */
+}
+
+input[type="text"] { /*Contenido del campo del nombre para la tarea */
+    width: 250px; /* Ancho del campo de texto */
+    height: 15px; /* Cambiar la altura del campo de texto */
+    background-color: #f2f2f2; /* Color de fondo del campo de texto */
+    padding: 8px; /* Espaciado interno del campo de texto */
+    border: 3px solid #ddd; /* Borde del campo de texto */
+}
+
+h1 { /*Contenido del texto: Lista de tareas */
+    text-align: center; /* Alineación del texto centrada */
+    margin-bottom: 20px; /* Margen inferior del encabezado */
+}
+
+ul { /*Contenido de la lista no ordenada */
+    list-style-type: none; /* Estilo de lista sin viñetas */
+    padding: 0; /* Eliminar relleno de la lista */
+}
+
+li {
+    display: flex; /* Mostrar elementos de la lista como flexibles */
+    align-items: center; /* Alineación vertical de los elementos */
+    justify-content: space-between; /* Alineación de elementos */
+    padding: 10px; /* Espaciado interno de los elementos de la lista */
+}
+
+li .taskText {
+    flex-grow: 1; /* Permitir que el texto de la tarea crezca dentro del espacio flexible */
+    margin-right: 10px; /* Margen derecho del texto de la tarea */
+}
+
+li .editBtn, /*Contenido para el margen entre los botones de editar y eliminar */
+li .deleteBtn {
+    margin-left: 10px; /* Aumentar el margen entre los botones */
+}
+
+li button {
+    align-self: flex-start; /* Alineación de botones */
+}
+
+.taskActions {
+    margin-top: 20px; /* Margen superior de las acciones de tarea */
+    display: flex; /* Mostrar acciones de tarea como flexibles */
+    justify-content: space-between; /* Distribuir el espacio entre las acciones */
+}
+
+.editBtn { /*Contenido del boton de editar */
+    padding: 10px; /* Espaciado interno de los botones */
+    border: none; /* Sin borde en los botones */
+    background-color: #007bff; /* Color de fondo de los botones */
+    color: #fff; /* Color del texto en los botones */
+    cursor: pointer; /* Cursor tipo puntero en los botones */
+    margin-right: 10px;
+}
+
+.editDateBtn { /*Contenido del boton de eliminar */
+    padding: 10px; /* Espaciado interno del botón editar fecha */
+    border: none; /* Sin borde en los botones */
+    background-color: #007bff;; /* Color de fondo del botón editar fecha */
+    color: #fff; /* Color del texto en el botón editar fecha */
+    cursor: pointer; /* Cursor tipo puntero en el botón editar fecha */
+    margin-left: 10px; /* Margen izquierdo para separar del botón editar */
+}
+
+.editDueDateBtn{ /*Contenido del boton de editar fecha */
+    background-color: brown; /*Color del boton */
+    padding: 5px; /* Espaciado interno del botón editar fecha */
+    height: 36px; /* Altura del botón editar fecha */
+}
+
+.deleteBtn{ /*Asignacion del color para el boton de editar */
+    background-color: red; /*Color del boton */
+}
+
+button { /*Contenido de todos los botones en general */
+    padding: 10px; /* Espaciado interno de los botones */
+    border: none; /* Sin borde en los botones */
+    background-color: yellowgreen; /* Color de fondo de los botones */
+    color: #fff; /* Color del texto en los botones */
+    cursor: pointer; /* Cursor tipo puntero en los botones */
+}
+
+button:hover { /*Asignacion del color al pasar por un boton */
+    background-color: black; /* Cambio de color al pasar el mouse por encima */
+}
+
+.completed { /*Contenido para marcar una tarea completada */
+    text-decoration: line-through; /* Decoración de texto de tarea completada */
+    opacity: 0.6; /* Opacidad reducida para tareas completadas */
+}
