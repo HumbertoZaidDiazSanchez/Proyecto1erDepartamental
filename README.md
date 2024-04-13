@@ -34,7 +34,7 @@ Una vez cargada la pagina, se nos mostrará un recuadro blanco con ciertas funci
 
 -Una vez dado click al boton "editar fecha", aparecerá un recuadro en la parte superior en medio de la pantalla.
 
--Se marcara la fecha de la tarea actual en azul de esta manera: dd-mm-aaaa, para cambiarla, damos click en el campo donde esta la fecha y escribimos la fecha, ej: 13-04-2024.
+-Se marcara la fecha de la tarea actual en azul de esta manera: aaaa-mm-dd, para cambiarla, damos click en el campo donde esta la fecha y escribimos la fecha, ej: 2024-04-13.
 
 -Una vez cambiada, damos click en el boton "aceptar", en caso de que no, damos click al boton "cancelar"
 
